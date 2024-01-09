@@ -55,11 +55,13 @@
     }
 
     .section2 li:first-child {
-        margin-left: 10px;
+        margin-left: 20px;
     }
 
     .section2 li:last-child {
-        margin-right: -10px;
+       /*  position: absolute;
+        right: 20px; */
+        margin-right: 0;
     }
 
     .navigation {
