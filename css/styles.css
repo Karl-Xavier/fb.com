@@ -1,0 +1,477 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+} 
+
+body {
+    background-color: rgb(235, 234, 234);
+}
+
+.fbImg {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 2px;
+}
+
+.header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header__h1 {
+    margin-left: 20px;
+}
+
+.naviBar li {
+    display: inline-block;
+    list-style-type: none;
+    background-color: lightgray;
+    border-radius: 50%;
+    padding: 5px;
+    user-select: none;
+}
+
+.header section {
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+}
+
+.header input {
+    width: 220px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: lightgray;
+    padding: 20px;
+    margin-left: 10px;
+}
+
+.navbar li {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 100px;
+}
+
+.navbar li:first-child {
+    margin-left: 70px;
+}
+
+.nav-link {
+    font-size: 2rem;
+    font-weight: 700;
+    cursor: pointer;
+    color: black;
+}
+
+.header section .profile {
+    /* width: 25px;
+    height: 25px; */
+    border-radius: 50%;
+    display: inline-block;
+}
+.header section li:last-child{
+    background-color: white;
+    padding: 0;
+    margin-top: 5px;
+}
+
+/* .header section .profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+} */
+
+.header section .profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.section {
+    display: none;
+}
+
+/* BODY DESIGNS */
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow-y: auto;
+
+    overflow-y: hidden;
+    margin-top: 20px;
+   position: relative;
+}
+
+/* SIDE NAVIGATION */
+
+.navigation {
+    width: 300px;
+    position: relative;
+    height: 400px;
+    overflow-y: auto;
+    margin-left: 20px;
+}
+
+.sidenav li {
+    list-style-type: none;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.sidenav li a {
+    text-decoration: none;
+    color: #000;
+}
+
+hr {
+    width: 250px;
+    margin: 10px 0 10px 0;
+}
+
+.shortcuts {
+    color: grey;
+}
+
+/* END */
+
+/* MAIN PAGE */
+
+.mainContain {
+    position: relative;
+    width: 500px;
+    max-width: 500px;
+    height: 600px;
+    overflow-y: auto;
+    margin: 0 auto 0 auto;
+
+}
+
+.mainContain::-webkit-scrollbar {
+    display: none;
+}
+
+.stories {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.story {
+    height: 220px;
+    width: 140px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.stori {
+    width: 140px;
+    height: 180px;
+    background-color: grey;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.plus {
+    position: absolute;
+    margin-left: 50px;
+    margin-top: -22px;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.stories p {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.question {
+    max-width: 430px;
+    margin-top: 20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.ques {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+hr {
+    width: 100%;
+}
+
+.useri {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: grey;
+    margin-right: 20px;
+}
+
+.question input {
+    width: 350px;
+    height: 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: lightgray;
+    padding: 20px;
+    outline: none;
+}
+
+.emo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.emo span {
+    font-size: 14px;
+}
+
+.nomessage {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* END */
+
+/* RIGHT SIDE BAR */
+
+.rightBar {
+    width: 200px;
+    max-width: 200px;
+    height: 400px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 0 auto;
+}
+
+.rightBar::-webkit-scrollbar {
+    display: none;
+}
+
+.sideTitle {
+    color: grey;
+}
+
+.message {
+    display: none;
+}
+
+.messageHeader {
+    color: grey;
+    margin-bottom: 10px;
+}
+
+.chatroom {
+    height: 400px;
+}
+
+.prof {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    margin-bottom: 10px;
+}
+
+.chatContact {
+    list-style-type: none;
+    width: 100%;
+}
+
+.chatName{
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.profilepic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: grey;
+}
+
+.active {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color: rgb(5, 148, 5);
+    position: relative;
+    top: 19px;
+    left: 19px;
+}
+
+/* END */
+
+
+
+/* New Main */
+
+.chatArea {
+    width: 340px;
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    
+    border-radius: 10px;
+    overflow: hidden;
+    overflow-y: auto;
+    border: 1px solid #333;
+    margin-left: 20px;
+    background-color: rgb(235, 234, 234);
+    display: none;
+}
+
+.showChat {
+    display: block;
+}
+
+.poof {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    background-color: black;
+    color: white;
+    padding: 10px 5px 10px 5px;
+}
+
+.chatTitle {
+    margin-top: 5px;
+}
+
+.cancelBtn {
+    float: right;
+    margin-left: 160px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.chatbox {
+    height: 350px;
+    max-width: 350px;
+    max-height: 420px;
+    overflow-y: auto;
+}
+
+.chatbox::-webkit-scrollbar {
+    display: none;
+}
+
+.chat {
+    display: flex;
+}
+
+.incoming {
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    justify-content: flex-end;
+   
+}
+
+.chatbox .chat p {
+    padding: 12px 16px;
+    max-width: 75%;
+    white-space: pre-wrap;
+    background-color: black;
+    color: white;
+    border-radius: 10px 10px 0 10px;
+    display: inline-block;
+}
+
+.chatbot .outgoing p {
+    border-radius: 0 10px 10px 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: black;
+    color: white;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.form textarea {
+    width: 100%;
+    height: 40px;
+    max-height: 180px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    resize: none;
+    padding: 10px 20px 10px 20px;
+    background-color: lightgrey;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.form span {
+    cursor: pointer;
+    margin-right: 10px;
+    font-weight: 800;
+}
+
+.groups {
+    display: none;
+    max-width: 600px;
+}
+
+.group {
+    display: block;
+}
+
+.none {
+    display: none;
+}
+
+/* End of New Main */
+
+.chatBotArea {
+    display: none;
+}
+
+.vidSection {
+    display: none;
+}
